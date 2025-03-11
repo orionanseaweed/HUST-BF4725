@@ -1,4 +1,4 @@
-e <- ggplot(Experiment_1, aes(x = time)) +
+e <- ggplot(experiment_1, aes(x = time)) +
 geom_line(aes(y = t, color = "T"), size = 1) +
 geom_line(aes(y = delta_t, color = "\u0394T"), size = 1, linetype = "dashed") +
 scale_y_continuous(
