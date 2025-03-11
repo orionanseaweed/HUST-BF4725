@@ -1,25 +1,27 @@
+# experiment 5: yeast observation in wet mount.
+
 library(ggplot2)
 library(tidyverse)
 
-# Tạo dataframe
+# create dataframe from experimental datas
 data <- data.frame(
-  kt = c("1", "2", "3"),
+  fov = c("1", "2", "3"),         # fov stands for microscope field of view 
   sum_cell = c(726, 734, 718),
-  nc_cell = c(38, 42, 32) # nc = nay choi
+  budding_cell = c(38, 42, 32)
 )
 
-# Tính trung bình và độ lệch chuẩn
+# calculate means and sds
 means <- colMeans(data[, -1])
 sds <- apply(data[, -1], 2, sd)
 
-# Tạo dataframe cho vẽ biểu đồ
+# create data frame for the plot
 plot_data <- data.frame(
   Nhom = names(means),
   Trung_binh = means,
   SD = sds
 )
 
-# Vẽ biểu đồ với thanh sai số
+# plot with error bar
 ggplot(plot_data, aes(x = Nhom, y = Trung_binh)) +
   geom_bar(stat = "identity", position = position_dodge(0.9), fill = c("#1f77b4", "#ff7f0e"), color = "black") +
   geom_errorbar(aes(ymin = Trung_binh - SD, ymax = Trung_binh + SD),
