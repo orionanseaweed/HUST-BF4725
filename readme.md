@@ -1,6 +1,6 @@
-##### Hanoi University of Science and Technology
+### Hanoi University of Science and Technology
 
-###### School of Chemistry and Life Sciences
+#### School of Chemistry and Life Sciences
 
 ---
 
