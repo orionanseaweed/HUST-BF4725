@@ -1,9 +1,7 @@
-### Hanoi University of Science and Technology
+### School of Chemistry and Life Sciences, Hanoi University of Science and Technology
 
-#### School of Chemistry and Life Sciences
+#### BF4725: Techniques for Measure and Automatic Control in Biotechnology
 
 ---
 
-BF3702: Experiments in Microbiology.
-
-BF4725: Techniques for Measure and Automatic Control in Biotechnology.
+Experiment 1 (Expt-1): 
